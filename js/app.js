@@ -1,21 +1,25 @@
 var swiper1 = new Swiper(".mainSwiper", {
-      cssMode: true,
+      spaceBetween: 30,
+      slidesPerView: 1,
       navigation: {
         nextEl: ".main-next",
         prevEl: ".main-prev",
       },
-      pagination: {
-        el: ".main-pagination",
-      },
+      autoHeight: true,
       mousewheel: true,
       keyboard: true,
+      loop: false
 });
 
 var swiper2  = new Swiper(".collectionSwiper", {
-      spaceBetween: 30,
-      slidesPerView: 1,
+      spaceBetween: 0,
+      slidesPerView: 3,
       pagination: {
         el: ".collection-pagination",
         clickable: true,
       },
+      autoHeight: true,
+      mousewheel: true,
+      keyboard: true,
+      loop: false
 });
